@@ -1,0 +1,37 @@
+{
+    "name": "Hello world",
+    "title": "Engineering Student, Full Stack Developer, Designer",
+    "contact": {
+      "age": 211,
+      "phone": "(+212)665303992",
+      "email": "aymanemazzour@gmail.com",
+      "address": "N 227 BLOC A HAY ZOUAGHA HAUT FES"
+    },
+    "skills": {
+      "frontend": [
+        { "name": "HTML", "level": 90 },
+        { "name": "CSS", "level": 80 },
+        { "name": "JavaScript", "level": 50 },
+        { "name": "React", "level": 85 }
+      ],
+      "backend": [
+        { "name": "PHP", "level": 90 },
+        { "name": "Node.js", "level": 80 },
+        { "name": "Python", "level": 60 },
+        { "name": "MySQL", "level": 85 }
+      ]
+    },
+    "education": [
+      {
+        "institution": "University of Minnesota Twin Cities",
+        "degree": "Bachelor in Computer Engineering",
+        "year": "2006 - 2010"
+      },
+      {
+        "institution": "School of Informational Technologies",
+        "degree": "Informational Technology Studies",
+        "year": "2004 - 2005"
+      }
+    ]
+  }
+  
