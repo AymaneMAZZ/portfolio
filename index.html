@@ -472,7 +472,7 @@
       <section class="blog section container" id="blog">
         <h2 class="section__title">Latest Posts_</h2>
         <div class="posts__container grid">
-          <div class="post__card">
+          <a href="blog_details.html" class="post__card">
             <img src="assets/img/blog-1.png" alt="" class="post__img">
             <div class="post__content">
               <p class="post__date text-xs">October 22, 2017</p>
@@ -481,9 +481,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempr incididu...
               </p>
             </div>
-          </div>
+          </a>
 
-          <div class="post__card">
+          <a href="blog_details.html" class="post__card">
             <img src="assets/img/blog-2.png" alt="" class="post__img">
             <div class="post__content">
               <p class="post__date text-xs">October 22, 2017</p>
@@ -492,9 +492,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempr incididu...
               </p>
             </div>
-          </div>
+          </a>
 
-          <div class="post__card">
+          <a href="blog_details.html" class="post__card">
             <img src="assets/img/blog-3.png" alt="" class="post__img">
             <div class="post__content">
               <p class="post__date text-xs">October 22, 2017</p>
@@ -503,7 +503,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempr incididu...
               </p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -571,7 +571,7 @@
                   class="contact__input"></textarea>
                 </div>
 
-                <p class="contact__message text-sm" id="contact-message">Message</p>
+                <p class="contact__message text-sm" id="contact-message"></p>
 
                 <button type="submit" class="button contact__button">
                   SEND
@@ -589,7 +589,15 @@
 
 
     <!--=============== Style Switcher ===============-->
-    <div class="style__switcher"></div>
+    <div class="style__switcher">
+      <div class="style__switcher-toggler">
+        <i class="ri-settings-4-fill"></i>
+      </div>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      </div>
+    </div>
 
     <!--=============== Mixitup ===============-->
     <script src="assets/js/mixitup.min.js"></script>
@@ -599,14 +607,14 @@
 
     <!--=============== Email Js ===============-->
     <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
 
     <!--=============== Js ===============-->
     <script src="assets/js/main.js"></script>
 
     <!--=============== Common ===============-->
-    <script src="assets/js/common.js"></script>
+    <script src="assets/js/common.js" defer></script>
   </body>
 </html>
