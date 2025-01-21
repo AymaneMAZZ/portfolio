@@ -1,0 +1,139 @@
+{
+  "personalInfo": {
+    "name": "Mazzour Aymane",
+    "age": 20,
+    "phone": "(+212) 665-303-992",
+    "email": "aymanemazzour@gmail.com",
+    "address": "N 227 BLOC A HAY ZOUAGHA HAUT, Fes",
+    "jobTitle": "Engineering Student, Full Stack Developer, Designer",
+    "about": "I am a Junior Web Developer able to build a Web presence from the ground up - from concept, navigation, layout, and programming to UX and SEO. Skilled at writing well-designed, testable, and efficient code using current best practices in Web development. Fast learner, hard worker, and team player proficient in an array of scripting languages and multimedia Web tools.",
+    "cvLink": "assets/img/Aymane-Cv.pdf",
+    "socialLinks": {
+      "github": "https://github.com/",
+      "linkedin": "https://www.linkedin.com/",
+      "facebook": "https://www.facebook.com/"
+    }
+  },
+  "services": [
+    { "title": "Web Design", "description": "Expert in creating stunning UI/UX designs." },
+    { "title": "Web Development", "description": "Full-stack development with modern technologies." },
+    { "title": "Creative Design", "description": "Branding, logo, and creative content design." },
+    { "title": "Responsive Design", "description": "Ensuring mobile-friendly and adaptive designs." },
+    { "title": "Branding Identity", "description": "Crafting unique brand identities for businesses." },
+    { "title": "24/7 Support", "description": "Always available for support and maintenance." }
+  ],
+  "education": [
+    {
+      "school": "Institut Supérieur des Techniques Appliquées",
+      "year": "2021 - 2023",
+      "degree": "Diplôme de technicien spécialisé"
+    },
+    {
+      "school": "Lycee Adarissa",
+      "year": "2019 - 2020",
+      "degree": "BACCALAUREAT"
+    },
+    {
+      "school": "Lorem Ipsum School",
+      "year": "2022 - 2027",
+      "degree": "Diplome d'ingenieur d'etat "
+    }
+  ],
+  "employment": [
+    {
+      "company": "Apple",
+      "year": "2006 - 2010",
+      "position": "Senior Full Stack Developer"
+    },
+    {
+      "company": "Tech University",
+      "year": "2004 - 2005",
+      "position": "Software Engineer"
+    },
+    {
+      "company": "Mollys Studio",
+      "year": "2003 - 2006",
+      "position": "Programmer"
+    }
+  ],
+  "skills": {
+    "frontend": {
+      "HTML": 95,
+      "CSS": 80,
+      "JavaScript": 50,
+      "React": 85
+    },
+    "backend": {
+      "PHP": 90,
+      "Node.js": 80,
+      "Python": 60,
+      "MySQL": 85
+    }
+  },
+  "projects": [
+    {
+      "title": "Mobile & Desktop App for London Hostel Store",
+      "description": "Developed a complete web and mobile application for a hostel booking system.",
+      "techStack": ["HTML5", "CSS3", "JavaScript", "BEM", "Bower", "Grunt"],
+      "image": "assets/img/project-1.png",
+      "link": "www.superapp.com"
+    },
+    {
+      "title": "E-commerce Website",
+      "description": "Developed a modern e-commerce website with full payment integration.",
+      "techStack": ["React", "Node.js", "MongoDB", "Stripe API"],
+      "image": "assets/img/project-2.png",
+      "link": "www.ecommerceproject.com"
+    },
+    {
+      "title": "Landing Page for Travel Agency",
+      "description": "Designed and developed a responsive landing page for a travel agency.",
+      "techStack": ["HTML", "CSS", "Bootstrap", "jQuery"],
+      "image": "assets/img/project-3.png",
+      "link": "www.travelwebsite.com"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Antonio Anderson",
+      "project": "Landing Page for Travel Company",
+      "feedback": "Up or well must less rent read walk so be. Easy sold at do hour sing spot. Any meant has cease too the decay."
+    },
+    {
+      "name": "Maria Gonzales",
+      "project": "E-commerce Website",
+      "feedback": "Great attention to detail, delivered a high-quality website that exceeded expectations."
+    }
+  ],
+  "blog": [
+    {
+      "title": "How to Use CSS Preprocessor",
+      "date": "October 22, 2017",
+      "image": "assets/img/blog-1.png",
+      "link": "blog_details.html"
+    },
+    {
+      "title": "How I Organize My Work with Code",
+      "date": "October 22, 2017",
+      "image": "assets/img/blog-2.png",
+      "link": "blog_details.html"
+    },
+    {
+      "title": "SVG Sprites vs Icon Fonts",
+      "date": "October 22, 2017",
+      "image": "assets/img/blog-3.png",
+      "link": "blog_details.html"
+    }
+  ],
+  "contact": {
+    "phone": "8 (234) 456-33-33",
+    "skype": "iamivanovivan",
+    "email": "mail@gmail.com",
+    "socials": {
+      "facebook": "https://www.facebook.com/",
+      "linkedin": "https://www.linkedin.com/",
+      "github": "https://github.com/",
+      "bitbucket": "https://bitbucket.com/"
+    }
+  }
+}

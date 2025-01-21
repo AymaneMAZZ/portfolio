@@ -94,27 +94,6 @@
     })
     const alternateStyles = document.querySelectorAll('.alternate-style');
 
-//    function setActiveStyle(color){
-//     alternateStyles.forEach((style) => {
-//         if(color === style.getAttribute('title')){
-//             style.removeAttribute('disabled');
-//         }else{
-//             style.setAttribute('disabled','true');
-//         }
-//     });
-//    }
-
-
-    // function setActiveStyle(color) {
-    //     alternateStyles.forEach((style) => {
-    //         if (color === style.getAttribute('title')) {
-    //             style.removeAttribute('disabled');
-    //             localStorage.setItem('preferredStyle', color); // Sauvegarde
-    //         } else {
-    //             style.setAttribute('disabled', 'true');
-    //         }
-    //     });
-    // }
 
     window.setActiveStyle = function (color) {
         alternateStyles.forEach((style) => {
@@ -140,4 +119,71 @@
 
 
   })();
-  
+
+  // Fetch from json file 
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch("./assets/data/data.json") 
+
+        .then(response => response.json())
+        .then(data => {
+            // Update personal information
+            document.querySelector(".home__name").textContent = data.personalInfo.name;
+            document.querySelector(".home__work").textContent = data.personalInfo.jobTitle;
+            document.querySelector(".home__list dd:nth-of-type(1)").textContent = data.personalInfo.age;
+            document.querySelector(".home__list dd:nth-of-type(2)").textContent = data.personalInfo.phone;
+            document.querySelector(".home__list dd:nth-of-type(3)").textContent = data.personalInfo.email;
+            document.querySelector(".home__list dd:nth-of-type(4)").textContent = data.personalInfo.address;
+            document.querySelector(".hello__details").textContent = data.personalInfo.about;
+            document.querySelector(".button--flex").href = data.personalInfo.cvLink;
+
+             // Update social links
+             document.querySelector(".home__social-link[href*='github']").href = data.personalInfo.socialLinks.github;
+             document.querySelector(".home__social-link[href*='linkedin']").href = data.personalInfo.socialLinks.linkedin;
+             document.querySelector(".home__social-link[href*='facebook']").href = data.personalInfo.socialLinks.facebook;
+
+            // Update services
+            let servicesContainer = document.querySelector(".services__container");
+            servicesContainer.innerHTML = ""; // Clear existing services
+            data.services.forEach(service => {
+                let serviceItem = `
+                    <div class="services__item">
+                        <div class="icon__box">
+                            <img src="assets/img/web-design.png" alt="" class="services__icon">
+                            <div class="services__dot"><span class="dot"></span></div>
+                        </div>
+                        <h3 class="services__title text-lg">${service.title}</h3>
+                        <p class="services__detail">${service.description}</p>
+                    </div>
+                `;
+                servicesContainer.innerHTML += serviceItem;
+            });
+
+            // Update skills
+            updateSkills(".skills__list:nth-of-type(1)", data.skills.frontend);
+            updateSkills(".skills__list:nth-of-type(2)", data.skills.backend);
+        })
+        .catch(error => console.error("Error loading JSON data:", error));
+});
+
+// Function to update skills dynamically
+function updateSkills(selector, skills) {
+    let skillsContainer = document.querySelector(selector);
+    skillsContainer.innerHTML = "";
+    for (let skill in skills) {
+        let skillItem = `
+            <div class="skills__data">
+                <div class="skills__titles">
+                    <p class="skills__name text-sm">${skill}</p>
+                    <span class="skills__number text-sm">${skills[skill]}%</span>
+                </div>
+                <div class="skills__bar">
+                    <span class="skills__percentage" style="width: ${skills[skill]}%"></span>
+                </div>
+            </div>
+        `;
+        skillsContainer.innerHTML += skillItem;
+    }
+}
+
+
+ 
